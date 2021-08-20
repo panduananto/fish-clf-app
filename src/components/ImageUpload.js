@@ -16,7 +16,7 @@ const ImageUpload = forwardRef((props, ref) => {
 
   return (
     <div className="flex flex-col justify-center">
-      <label className="mb-4 block text-xl font-medium" htmlFor="view-fish-image">
+      <label className="mb-4 block text-xl text-center font-medium" htmlFor="view-fish-image">
         Please upload your fish image here
       </label>
       <div className="relative">
@@ -29,7 +29,7 @@ const ImageUpload = forwardRef((props, ref) => {
           onChange={handleBrowseImage}
         />
       </div>
-      <div className="mt-4 mb-6 text-md text-gray-500" id="view-fish-image-help">
+      <div className="mt-4 mb-6 text-md text-gray-500 text-center" id="view-fish-image-help">
         Your chosen image will be shown below
       </div>
       <div className="w-96 h-auto">

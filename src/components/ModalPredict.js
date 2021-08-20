@@ -4,9 +4,9 @@ function ModalPredict({ show, setModalShow, trueClass, percentage }) {
   return (
     <>
       {show ? (
-        <div id="modal-result-overlay" className="overlay">
-          <div className="flex flex-col justify-center items-center w-max rounded-md shadow-lg py-8 px-16 text-center bg-white">
-            <p id="text-predict-result" className="text-xl mb-6">
+        <div id="modal-result-overlay" className="overlay text-center">
+          <div className="flex flex-col justify-center items-center rounded-md shadow-lg py-8 px-6 w-96 md:w-max text-center bg-white">
+            <p id="text-predict-result" className="text-base md:text-xl mb-6">
               {trueClass ? (
                 <span>
                   Predicted class is <span className="font-bold">{trueClass}</span>, with confidence level of{' '}

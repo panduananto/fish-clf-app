@@ -67,22 +67,24 @@ function App() {
   };
 
   return (
-    <div>
-      <div className="bg-white flex flex-col justify-center items-center rounded-xl py-16 px-32">
-        <h1 className="text-5xl font-bold mb-6">Fish Species Prediction</h1>
-        <p className="text-xl mb-2">
-          <span className="font-bold">Available fish species to predict:</span> lutjanus, macropharyngodon,
-          oxycheilinus, pervagor, plectropomus, pseudanthias, pseudocheilinus, scolopsis, thalassoma, and wetmorella
+    <div className="max-w-screen-sm lg:max-w-screen-lg">
+      <div className="bg-white flex flex-col justify-center items-center rounded-xl px-5 md:px-10 py-8">
+        <h1 className="text-3xl lg:text-5xl font-bold mb-6 text-center">Fish Species Prediction</h1>
+        <p className="text-lg lg:text-xl mb-2 text-center">
+          <span className="font-bold">Available fish species to predict:</span> lutjanus, macropharyngodon, oxycheilinus,
+          pervagor, plectropomus, pseudanthias, pseudocheilinus, scolopsis, thalassoma, and wetmorella
         </p>
-        <div className="inline-flex items-center text-sm text-red-600 mb-6">
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-1" viewBox="0 0 20 20" fill="currentColor">
+        <div className="inline-flex items-start md:items-center text-sm text-red-600 mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 md:h-6 w-4 md:w-6 mr-1" viewBox="0 0 20 20" fill="currentColor">
             <path
               fillRule="evenodd"
               d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
               clipRule="evenodd"
             />
           </svg>
-          First run might be slow because the application needs to download the model first
+          <p className="text-xs md:text-sm lg:text-base">
+            First run might be slow as the application needs to download the model first
+          </p>
         </div>
         <form className="" action="/" method="POST" encType="multipart/form-data" onSubmit={handleFormSubmit}>
           <ImageUpload ref={imgRef}></ImageUpload>

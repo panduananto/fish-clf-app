@@ -11,6 +11,10 @@ package-lock.json
 
 # production
 /build
+/hosting
+.firebaserc
+firebase.json
+/.firebase
 
 # misc
 .DS_Store
